@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="fondo">
+        <div>
+            <div class="titulo">
+                <h1>Calculadora</h1>
+            </div>
+            <div class="barra_superior">
+                <input type="number" class="barra" id="operacion" placeholder="0">
+            </div>
+            <div class="numeros">
+                <Table>
+                    <tr>
+                        <td>
+                            <button type="button" id="siete" value="7">7</button>
+                        </td>
+                        <td>
+                            <button type="button" id="ocho" value="8">8</button>
+                        </td>
+                        <td>
+                            <button type="button" id="nueve" value="9">9</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="division()">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" id="cuatro" value="4">4</button>
+                        </td>
+                        <td>
+                            <button type="button" id="cinco" value="5">5</button>
+                        </td>
+                        <td>
+                            <button type="button" id="seis" value="6">6</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="multiplicacion()">x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" id="uno" value="1">1</button>
+                        </td>
+                        <td>
+                            <button type="button" id="dos" value="2">2</button>
+                        </td>
+                        <td>
+                            <button type="button" id="tres" value="3">3</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="resta()">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="reset()"><</button>
+                        </td>
+                        <td>
+                            <button type="button" id="cero" value="0">0</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="igual()">=</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="suma()">+</button>
+                        </td>
+                    </tr>
+                </Table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="calculadora.js"></script> 
+</html>

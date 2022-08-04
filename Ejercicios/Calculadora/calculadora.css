@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.fondo{
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-54587.jpg?w=360");
+    background-position: center center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /*rellena toda la pantalla*/
+    position: fixed;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 130px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+td{
+    justify-content: center;
+    align-items: center;
+}
+
+.barra{
+    display: flex;
+    width: 520px;
+    height: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+h1{
+    display: flex;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.titulo{
+    display: flex;
+}
+
+.barra_superior{
+    display: flex;
+}
+
+.numeros{
+    display: flex;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Callbacks</h2>
+
+<p>Do a calculation and then display the result.</p>
+
+<p id="demo"></p>
+
+<script>
+function calcular(num1, num2, callback) {
+/*recibe dos numeros (O eso deberia recibir), y una funcion que guardare en la variable myCallback
+en este caso estoy recibiendo num1 = 5, num2 = 5, my Callback = myDisplayer*/
+  let sum = num1 + num2; //suma los numeros
+  callback(sum); //ejecuta la funcion (myDisplayer, enviando el resultado de la suma)
+}
+
+function mostrar(something) {
+    //Simplemente muestra algo en HTML
+  document.getElementById("demo").innerHTML = something;
+}
+
+//Ejecuto myCalculator que tambien ejecutara myDisplayer
+calcular(5, 5, mostrar);
+
+
+/*Esta funcion ejecuta una funcion pasado un tiempo determinado (en milisegundos)*/
+//definimos una funcion
+function destiempo(){
+    console.log("Hola");
+}
+//Ejecuta la funcion destiempo pasados unos 10 segundos
+setTimeout(destiempo, 10000)
+
+/*PROMESAS (ASINCRONISMO)*/ 
+
+
+const myPromise = new Promise(
+    function(myResolve, myReject) {
+        setTimeout(function(){myResolve("I love You !!"); }, 3000);
+    }
+);
+
+myPromise.then(function(value) {
+  document.getElementById("demo").innerHTML = value;
+});
+
+</script>
+
+</body>
+</html>
