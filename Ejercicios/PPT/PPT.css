@@ -60,12 +60,6 @@ input{
     padding-left: 10px;
 }
 
-.top{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-
 .comparar{
     border: solid;
     border-radius: 10px;
@@ -199,3 +193,17 @@ dispositivo en el que se este visualizando dicha pagina*/
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+/* function history(jugador, computer){
+    document.getElementById("resultado1").value = "";
+    historial.unshift(jugador + " - " + computer + ", ");
+    if(historial > 5){
+        historial.pop();
+    }
+    for(const recorrido of historial){
+        let node = document.createElement("input");
+        node.value = recorrido;
+        document.getElementById("resultado1").appendChild(node);
+    }
+} */
